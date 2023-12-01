@@ -1,166 +1,11 @@
 /*
-/*
 Autor: JESUS ANGEL RUIZ
 Asignatura: LMGSI
-Unidad: UD 1
-Tarea: Tarea evaluativa 2 - Primer sitio web con formato (50%)
-Autoevaluación: https://docs.google.com/document/d/1pYBzJSqrdKv-DTFYTvWVLus4jLyFHbtRmuaxh1kH88c/edit?usp=drive_link
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 (80%) - Sitio Web
+Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6WsaXUt0EbhJUEhpW2w/edit?usp=drive_link
 
-
- Estilos de nuestro documento HTML 
-
-Para el bodydefinimos los estilos de color de fondo, la fuente de texto el margen y el padding
-body {
-    background-color: lightcyan;
-    font-family: 'Helvetica', Arial, Helvetica, sans-serif, monospace;
-    margin: 50px 50px 50px 50px;
-    padding: 30px 30px 30px 30px;
-}
-
-Para H1 definimos los estilos de color de texto, cambiamos éste a mayúsculas, subrayado, negrita
-y indentamos el texto. Definimos también el margen
-h1 {
-    color: darkgoldenrod;
-    text-transform: uppercase;
-    text-decoration:underline solid;
-    text-indent: 50px;
-    margin: 2% 2% 2% 0%;
-}
-
-Para H2 definimos otro estilo de color de texto, cambiamos a modo línea la propiedad display. 
-Indentamos el texto, alineamos este arriba y a la izquierda. Cambiamos a mayúscula subrayado, negrita.
-h2 {
-    display: inline-block;
-    text-indent: 50px;
-    vertical-align: top;
-    text-align: left;
-    color: darkblue;
-    text-transform: uppercase;
-    text-decoration: underline solid;
-    font-weight: 700;
-}
-
-Para los parrafos p cambiamos el color de la letra, modificamos el padding, el tamaño de 
-letra e indentamos el texto en sus 4 lados.
-p {
-    color: gray;
-	padding: 5px 5px 5px 5px;
-	font-size: 15px;
-	text-indent: 10px 10px 10px 10px;;
-}
-
-Para los enlaces con la etiqueta a he modificado el formato para darle un aspecto de botón.
-He cambiado a modo línea la propiedad display para dar aspecto de menú
-a {
-    display: inline-block;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    color:white;
-    padding: 5px 5px 5px 5px;
-    border: 5px solid blue;
-    background-color: blue;
-    border-radius: 10px 0px 10px 0px;
-}
-
-Se define la tabla para que se autoajuste al texto, que en el borde entre celdas no quede
-espacio y defino margenes y padding de la tabla
-table {
-    table-layout: auto;
-    width: 100%;
-    border-collapse:collapse;
-    margin: 5% 0% 5% 0%;
-    padding: 3px 3px 3px 3px;
-}
-
-Se define los encabezados de columnas para que el color sea diferente, esté centrado y
-que el espacio entre letras y palabras sea ligeramente mayor y que el ancho de las celdas 
-no sea menor de 150 px. Con border-bottom definimos una línea que separa cabeera del resto
-th {
-    border-bottom: 2px solid blue;
-    padding: 5px 5px 5px 5px;
-    text-decoration: solid;
-    color: blue;
-    margin: 10% 10% 10% 10%;
-    text-align: center;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    min-width: 150px;
-}
-
-Defino formatos para que ajuste bien y aumento el eespaciade entre líneas de texto
-td {
-    padding: 10px 10px 10px 10px;
-    margin: 10% 10% 10% 10%;
-    text-align: left;
-    min-width: 100px;
-    line-height: 30px;
-}
-
-Defino una clase centrado para centrar texto
-.centrado {
-    text-align:center;
-}
-
-Defino una clase centrado para centrar texto
-.negrita {
-	color: indigo;
-	font-weight: bold;
-}
-
-Defino para el video el tamaño, bordes, su color, esquinas redondeadas...
-video {
-    width: 320px;
-    height: 240px;
-    border: solid;
-    border-width:2;
-    border-color: darkgoldenrod;
-    border-radius: 10%;
-    background-color: black;
-}
-
-Defino para la imagen el tamaño máximo en porcentaje, bordes, su color, esquinas redondeadas...
-img {
-    display: inline-block;
-    margin: 2% 2% 2% 2%;
-    max-width: 15%;
-    height: auto;
-    border: solid;
-    border-width:2;
-    border-color: darkgoldenrod;
-    border-radius: 10%;
-}
-
-Defino la lista desordenada en modo bloque en línea, que se alinee arriba, texto a la
-izquierda que empiece con cuadrados cada miembro de la lista
-ul {
-    vertical-align: top;
-    display: inline-block;
-    text-align: left;
-    list-style-type: square;
-    line-height: 50px;
-}
-
-Defino la lista ordenada en modo línea
-ol li {
-    display: inline;
-}
-
-Defino la lista de distribución en modo línea, con su padding y alineada arriba
-dl {
-    display: inline-block;
-    padding: 10px 100px 10px 0px;
-    vertical-align: top;
-}
-*/
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "nav nav"
-      "main aside" 3fr 1fr
-      "footer footer" min-content;
-  }
+Estilos de nuestro documento HTML 
 
 /* Definimos las propiedades css del body para definir la fuente que se usará, los margenes, alineación del texto*/
 body {
@@ -216,7 +61,7 @@ section {
 
 /* Estilos para el pie de página */
 aside {
-        background-color: deepskyblue;
+    background-color: deepskyblue;
     border-radius: 10px;
     /* Usamos stretcha para que ocupe todo el espacio del contenedor */
     align-items: stretch;
@@ -302,21 +147,23 @@ img {
 	margin:1rem 1rem;
 }
 
-/* Características de imagen en formato de botón */
+/* Características de imagen en formato de botón con medidas relativas
+ y posicionamiento float*/
 .imagen-boton {
     border-radius: 10px;
     width: 28%;
     float: centre;
 }
 
-/* Definimos texto general. Generalmente para etiquetas p */
+/* Definimos texto general. Generalmente para etiquetas p con medidas
+relativas */
 .texto {
 	padding-left: 1rem;
 	text-align: justify ;
 	line-height: 2rem;;
 }
 
-/* Definimos texto para titulos. */
+/* Definimos texto para titulos. Con medidas relativas */
 .texto-title {
     padding-left: 1rem;
 	text-align: center ;
@@ -324,7 +171,7 @@ img {
     font-size: 2rem; 
 }
 
-/* Información sobre el tema descrito en el título a que corresponda */
+/* Definimos características para la etiqueta article */
 article {
     background-color: deepskyblue;
     margin: 5px;
@@ -338,16 +185,6 @@ article {
 
 article ul li {
 	text-align: left;
-}
-
-/* Posicionamiento fixed para la flecha */
-.fijado {
-	position:fixed;
-	bottom: 0.6rem;
-	right: 0.6rem;
-	height: 5rem;
-	width:5rem;
-	background-color: salmon;
 }
 
 .boton {
@@ -391,16 +228,6 @@ article ul li {
     border-radius: 10px;   
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 300px 50px;
-    grid-template-rows: 200px 75px;
-    grid-gap: 10px 20px;
-}
-
-div {
-    display: grid;
-}
 
 #portfolio {
     display: flex;
