@@ -6,47 +6,53 @@
   <meta name="robots" content="noindex" />
   <title>Sitio Web de Ventanas Aislantes</title>
   <link rel="stylesheet" type="text/css" href="../styles/normalize.css"/>
-  <link rel="stylesheet" type="text/css" href="../styles/estilos-productos.css"/>
+  <link rel="stylesheet" type="text/css" href="../styles/estilos.css"/>
 </head>
 
 <body>
-
+  <!-- Usamos etiquetas semánticas para los diferentes contenedores. Header, nav, aside y footer -->
   <header>
-    <h1>Ventanas Aislantes</h1>
-    <img class="logo" src="../img/pexels-rex-way-3613236-logo_edited.jpg" alt="logo" width="20%" height="40%" />
-    
-    <!-- Menú de navegación. Usa flexbox -->
-
-
+    <h1 class="texto-title">Ventanas Aislantes</h1>
+    <img class="logo" src="../../img/pexels-rex-way-3613236-logo_edited.jpg" alt="logo" width="20%" height="40%" />
   </header>
+  
+  <!-- Menú de navegación. Usa flexbox -->
   <nav>
     <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../productos.html">Productos</a></li>
-      <li><a href="../portfolio.html">Portfolio</a></li>
-      <li><a href="../noticias.html">Noticias</a></li>
-      <li><a href="../contacto.html">Contacto</a></li>
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../productos.html">Productos</a></li>
+      <li><a href="../../portfolio.html">Portfolio</a></li>
+      <li><a href="../../noticias.html">Noticias</a></li>
+      <li><a href="../../contacto.html">Contacto</a></li>
     </ul>
   </nav>
 
   <main>
     <article>
-      <h1 class="texto">Mixta</h1>
-      <section>
-          <h4 class="texto">Practicable de 68 mm.</h4>
-          <a href="../productos/subproductos/alu-r60.html"><img class="imagen-float" src="../img/pexels-rex-way-3613236-logo_edited.jpg" alt="PVC"></a> 
-      </section>
+      <h1 class="texto-title">Mixta Practicable de 60 mm.</h1>
+      <img class="imagen-float" src="../img/MA45.png" alt="Mixta">
+      <p class="texto"> Características: </p>
+      <p class="texto">Perfilería de aleación en hoja y marco, con certificación y patentado por la marca desarrolladora</p>
+      <p class="texto">El acoplamiento de los perfiles metálicos a la madera mediante clips de nylon con palanca
+        giratoria, permite absorber las diferencias de dilatación entre la madera y aluminio.</p> 
+      <p class="texto">Profundidad de marco: 60 mm.</p> 
+      <p class="texto">Aislamiento térmico Uf: 2,0 W(m2.k).</p>
+      <p class="texto">Aislamiento acústico: hasta 35 dB.</p>
+      <p class="texto">Permeabilidad al aire: CLASE 4.</p>
+      <p class="texto">Estanqueidad al agua: E 1050.</p>
+      <p class="texto">Resistencia a la carga del viento: CLASE C5.</p>
+      <a href="../productos/MA45.pdf" class="boton-portfolio" target="_self">Ficha técnica</a>
     </article>
-  </main> 
 
+    <!-- He introducido el aside dentro del main para que se adecúe a lo que necesito. podría ir fuera -->
     <aside>
-      <h1 class="texto">PRODUCTOS</h1>
-      <a href="../productos/pvc.html" class="boton">PVC</a>
-      <a href="../productos/aluminio.html" class="boton">Aluminio</a>
-      <a href="../productos/madera.html" class="boton">Madera</a>
-      <a href="../productos/mixta.html" class="boton">Mixta</a> 
+      <h1 class="texto-title">PRODUCTOS</h1>
+      <a href="../../productos/pvc.html" class="boton-nav"> <img class="imagen-boton" src="../../img/PVC-70.png" alt="PVC">PVC</a>
+      <a href="../../productos/aluminio.html" class="boton-nav"> <img class="imagen-boton" src="../../img/Alu-70.png" alt="Aluminio">Aluminio</a>
+      <a href="../../productos/madera.html" class="boton-nav"> <img class="imagen-boton" src="../../img/M68.png" alt="Madera">Madera</a>
+      <a href="../../productos/mixta.html" class="boton-nav"> <img class="imagen-boton" src="../../img/MA45.png" alt="Mixta">Mixta</a> 
     </aside>
-  </section>
+  </main> 
  
   <footer>
     <p class="sectionSign"></p>
