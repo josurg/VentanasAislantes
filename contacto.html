@@ -6,15 +6,14 @@ Tarea: Tarea evaluativa 2 (80%) - Sitio Web
 Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6WsaXUt0EbhJUEhpW2w/edit?usp=drive_link
 -->
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="es">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex" />
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <title>Sitio Web de Ventanas Aislantes</title>
-    <link rel="stylesheet" type="text/css" href="../styles/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="../styles/estilos-contacto.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/estilos-contacto.css">
   </head>
 
   <body>
@@ -22,17 +21,17 @@ Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6Ws
     <!-- Usamos etiquetas semánticas para los diferentes contenedores. Header, nav, aside y footer -->
     <header>
       <h1 class="texto-title">Ventanas Aislantes</h1>
-      <img class="logo" src="../img/pexels-rex-way-3613236-logo_edited.jpg" alt="logo" width="20%" height="40%" />
+      <img class="logo" src="./img/pexels-rex-way-3613236-logo_edited.jpg" alt="logo">
     </header>
     
     <!-- Menú de navegación. Usaremos flexbox sobre una lista desordenada -->
     <nav>
       <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../productos.html">Productos</a></li>
-        <li><a href="../portfolio.html">Portfolio</a></li>
-        <li><a href="../noticias.html">Noticias</a></li>
-        <li><a href="../contacto.html">Contacto</a></li>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./noticias.html">Noticias</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
       </ul>
     </nav>
 
@@ -40,6 +39,7 @@ Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6Ws
     Usamos ademas clases para dar formato -->
     <main>
       <section>
+        <h2 hidden>Contacta con nosotros</h2>
         <article>
 
           <!-- Usamos la etiqueta form para agrupar los elementos de formulario y donde finalmente podremos enviar un mail con el método post -->
@@ -73,11 +73,11 @@ Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6Ws
       
       <!-- He introducido el aside dentro del main para que se adecúe a lo que necesito. podría ir fuera -->
       <aside>
-        <h1 class="texto-title">Puedes vernos en:</h1>
-        <a href="https://es-es.facebook.com/ventanascortizo/" class="boton-nav"> <img class="imagen-boton-redes" src="../img/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/aislatech_ventanas_termopanel/" class="boton-nav"> <img class="imagen-boton-redes" src="../img/instagram.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/search?q=ventanas&t=1701194871399" class="boton-nav"> <img class="imagen-boton-redes" src="../img/tik-tok.png" alt="Tik Tok"></a>
-        <a href="https://twitter.com/x" class="boton-nav"> <img class="imagen-boton-redes" src="../img/gorjeo.png" alt="X"></a> 
+        <h2 class="texto-title">Puedes vernos en:</h2>
+        <a href="https://es-es.facebook.com/ventanascortizo/" class="boton-nav"> <img class="imagen-boton-redes" src="./img/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/aislatech_ventanas_termopanel/" class="boton-nav"> <img class="imagen-boton-redes" src="./img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/search?q=ventanas&t=1701194871399" class="boton-nav"> <img class="imagen-boton-redes" src="./img/tik-tok.png" alt="Tik Tok"></a>
+        <a href="https://twitter.com/x" class="boton-nav"> <img class="imagen-boton-redes" src="./img/gorjeo.png" alt="X"></a> 
       </aside>
     </main> 
     

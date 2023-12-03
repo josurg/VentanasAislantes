@@ -4,8 +4,18 @@ Asignatura: LMGSI
 Unidad: UD 2
 Tarea: Tarea evaluativa 2 (80%) - Sitio Web
 Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6WsaXUt0EbhJUEhpW2w/edit?usp=drive_link
+*/
 
-Estilos de nuestro documento HTML 
+/* Enlazazamosr hojas de estilo externas que vamos a usar */
+@import "./normalize.css";
+
+/* Especificamos las fuentes que vamos a usar. Si queremos tenemos que usarana conpor ejemplo:
+  font-family: "Mystery Quest", cursive;
+  font-size: 150%;
+
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");*/
+
+/*Estilos de nuestro documento HTML */
 
 /* Definimos las propiedades css del body para definir la fuente que se usará, los margenes, alineación del texto*/
 body {
@@ -106,7 +116,7 @@ nav ul {
 	flex-direction: row;
 	justify-content: center;
 	list-style: none;
-	margin: 10; 
+	margin: 10px; 
 	background-color: deepskyblue;
   }
 
@@ -152,7 +162,6 @@ img {
 .imagen-boton {
     border-radius: 10px;
     width: 28%;
-    float: centre;
 }
 
 /* Definimos texto general. Generalmente para etiquetas p con medidas
@@ -217,7 +226,6 @@ article ul li {
 
 .boton-portfolio {
     float: right;
-    position:bottom;
     margin-right: 2%;
     margin-bottom: 2%;
     color: #f1f1f1;
